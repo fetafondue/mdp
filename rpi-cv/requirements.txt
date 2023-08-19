@@ -1,3 +1,5 @@
 numpy==1.25.2
+opencv_python==4.8.0.76
 picamera==1.13
+PyBluez==0.30
 pyserial==3.5
