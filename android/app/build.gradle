@@ -11,7 +11,7 @@ android {
         minSdk 21
         targetSdk 33
         versionCode 1
-        versionName "MDPGroup3 AY22S2"
+        versionName "MDPGroup28 AY23S1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
