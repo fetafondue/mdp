@@ -1,25 +1,16 @@
-from Rpi_MultiProcess import MultiProcess
-import time
-import serial
-#import sys
-from colorama import *
+import os
+import argparse
 
-init(autoreset=True)
-#print(sys.version)
-#print(sys.path)
+from src.communicator.MultiProcessCommunication import MultiProcessCommunicator
+
+
 def init():
-    try:
-        multi = MultiProcess()
-        multi.start()
-    except KeyboardInterrupt:
-        multi.AND.disconnect_AND()
-        multi.ALG.disconnect_ALG()
-        multi.STM.disconnect_STM() 
-    except Exception as err:
-        print(Fore.RED + '[Main.py ERROR] {}'.format(str(err)))
-        multi.AND.disconnect_AND()
-        multi.ALG.disconnect_ALG()
-        multi.STM.disconnect_STM()
+    os.system("sudo hciconfig hci0 piscan")
+    multiprocess_communication_process = MultiProcessCommunicator()
+    multiprocess_communication_process.start()
+
+
 
 if __name__ == '__main__':
     init()
+ 
