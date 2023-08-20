@@ -7,12 +7,12 @@ from multiprocessing.managers import BaseManager
 import cv2
 import imagezmq
 
-from picamera import PiCamera
-from picamera.array import PiRGBArray
+# from picamera import PiCamera
+# from picamera.array import PiRGBArray
 
-from src.communicator.Android import Android
-from src.communicator.Arduino import Arduino
-from src.communicator.Algorithm import Algorithm
+from src.communicator.Android import Android_communicator
+from src.communicator.Arduino import Arduino_communicator
+from src.communicator.Algorithm import Algorithm_communicator
 from src.config import STOPPING_IMAGE, IMAGE_WIDTH, IMAGE_HEIGHT, IMAGE_FORMAT
 from src.protocols import *
 
@@ -52,9 +52,9 @@ class MultiProcessComms:
         """
         print('Initializing Multiprocessing Communication')
 
-        self.arduino = Arduino()  # handles connection to Arduino
-        self.algorithm = Algorithm()  # handles connection to Algorithm
-        self.android = Android()  # handles connection to Android
+        self.arduino = Arduino_communicator()  # handles connection to Arduino
+        self.algorithm = Algorithm_communicator()  # handles connection to Algorithm
+        self.android = Android_communicator()  # handles connection to Android
         
         self.manager = DequeManager()
         self.manager.start()
