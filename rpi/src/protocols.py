@@ -38,10 +38,6 @@ class AndroidToAlgorithm:
     START_EXPLORATION = 'SE|'.encode()
     START_SHORTEST_PATH = 'SP|'.encode()
     SEND_ARENA = 'SendArena'.encode()
-<<<<<<< HEAD
-    REQUEST_MDF = 'MDF|'.encode()
-=======
->>>>>>> f2afaf36a2b19dd5407c0283ddd18d146ad6b9d5
     
 
 

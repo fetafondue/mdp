@@ -32,10 +32,6 @@ class Algorithm_communicator:
                     self.client_sock, self.address = self.socket.accept()
                     print('Successfully connected with Algorithm PC: ' + str(self.address))
                     retry = False
-<<<<<<< HEAD:RPi/src/communicator/Algorithm.py
-                    print(retry)
-=======
->>>>>>> f2afaf36a2b19dd5407c0283ddd18d146ad6b9d5:RPi/src/communicator/Algorithm_com.py
                 
             except Exception as error:
                 print('Connection with Algorithm failed: ' + str(error))
@@ -94,12 +90,7 @@ class Algorithm_communicator:
         try:
             print('To Algorithm:')
             print(message)
-<<<<<<< HEAD:RPi/src/communicator/Algorithm.py
-            #self.client_sock.send(message.encode())
-            self.client_sock(message)
-=======
             self.client_sock.send(message)
->>>>>>> f2afaf36a2b19dd5407c0283ddd18d146ad6b9d5:RPi/src/communicator/Algorithm_com.py
 
         except Exception as error:
             print('Algorithm write process failed: ' + str(error))
@@ -107,17 +98,10 @@ class Algorithm_communicator:
 
 if __name__ == '__main__':
     message = "Hello from Rpi"
-<<<<<<< HEAD:RPi/src/communicator/Algorithm.py
-    A = Algorithm()
-    A.connect()
-    print("Connection is successful") 
-    A.write(message)
-=======
     A = Algorithm_communicator()
     A.connect_algo()
     print("Connection is successful") 
     A.write_algo(message)
->>>>>>> f2afaf36a2b19dd5407c0283ddd18d146ad6b9d5:RPi/src/communicator/Algorithm_com.py
     print("Message successfully sent")
     A.read_algo()
     print("Message successfully receved")

@@ -4,14 +4,12 @@ Raspberry Pi Codebase for CZ3004 MDP
 
 ## Set Up on Raspberry Pi
 
-- Working on Raspbian Jessie (2016-02-26), with Python version 3.4.2. Ensure that OpenCV 3.3.0 is installed as well.
-- Ensure that `picamera` version is at 1.1.0 (`sudo pip3 install "picamera[array]" == 1.1.0`)  
-- Ensure that `at-spi2-core` is installed (`sudo apt-get install at-spi2-core`)  
+- Install dependencies `pip install -r requirements.txt`
 
 ## To run RPi
 
 - Change directory: `cd rpi`  
-- Main Program: `sudo python3 -m main`
+- Main Program: `sudo python -m main`
   - optional argument:  `-i <name>`
   - where `name` is your name if your computer is being used as the image processing server
   - default: no image recognition

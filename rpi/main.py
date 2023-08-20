@@ -1,7 +1,7 @@
 import os
 import argparse
 
-from src.communicator.MultiProcessCommunication import MultiProcessCommunicator
+from src.communicator.MultiProcessComms import MultiProcessCommunicator
 
 
 def init():

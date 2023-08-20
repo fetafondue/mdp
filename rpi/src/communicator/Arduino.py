@@ -82,9 +82,5 @@ if __name__ == '__main__':
     A.connect_arduino()
     A.read_arduino()
     message = "Hello Arduino"
-<<<<<<< HEAD:RPi/src/communicator/Arduino.py
-    A.write(message)
-=======
     A.write_arduino(message)
->>>>>>> f2afaf36a2b19dd5407c0283ddd18d146ad6b9d5:RPi/src/communicator/Arduino_com.py
     print("Arduino script succesfully ran.")

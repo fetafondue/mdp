@@ -5,7 +5,7 @@ from multiprocessing import Process, Value
 from multiprocessing.managers import BaseManager
 
 import cv2
-# import imagezmq
+import imagezmq
 
 from picamera import PiCamera
 from picamera.array import PiRGBArray
