@@ -7,7 +7,7 @@ public class Cell {
 
     float startX, startY, endX, endY;
     Paint paint;
-    String type;
+    String type; //testing this out
     int id = -1;
 
     //repeated - create a color thing
