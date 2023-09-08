@@ -1,0 +1,2 @@
+2023-09-08 09:24:12,563 :: INFO :: Bluetooth connection started
+2023-09-08 09:24:50,414 :: ERROR :: Error in Bluetooth link connection: Need 5 arguments, got 3

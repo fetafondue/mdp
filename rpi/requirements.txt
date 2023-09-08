@@ -1,6 +1,6 @@
+colorzero==2.0
+gpiozero==1.6.2
 picamera==1.13
+PyBluez==0.23
 pyserial==3.5
-numpy==1.25.2
-git+https://github.com/pybluez/pybluez.git
-opencv-python==4.8.0.76
-imagezmq==1.1.1
+requests~=2.27.1
