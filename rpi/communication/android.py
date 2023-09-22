@@ -42,7 +42,7 @@ class AndroidMessage:
         Returns the message as a JSON string.
         :return: JSON string representation of the message.
         """
-        return json.dumps({'cat': self._cat, 'value': self._value})
+        return json.dumps({"cat": self._cat, "value": self._value})
 
 
 class AndroidLink(Link):
